@@ -1,0 +1,35 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.iconFacebook {
+    padding-right: 5px;
+    text-decoration: none !important;
+}
+
+.iconFacebook img {
+    content: url("../../common/images/facebook_white_icon.png");
+}
+
+.iconInstagram img {
+    content: url("../../common/images/instagram_white_icon.png");
+}
+
+.iconFacebook img:hover {
+    content: url("../../common/images/facebook_original_icon.png");
+    text-decoration: none !important;
+}
+
+.iconInstagram img:hover {
+    content: url("../../common/images/instagram_original_icon.png");
+    text-decoration: none !important;
+}
+
+.socialMedia {
+    float: right;
+}

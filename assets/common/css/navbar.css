@@ -1,0 +1,53 @@
+/* navbar */
+
+.navbar-gatunos {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* brand and text  */
+
+.navbar-gatunos .navbar-brand,
+.navbar-gatunos .navbar-text {
+    color: rgb(255, 255, 255);
+    background: url("../../common/images/logo-white.png");
+}
+
+
+/* brand hover */
+
+.navbar-gatunos .navbar-brand:hover {
+    opacity: 0.7;
+}
+
+
+/* link */
+
+.navbar-gatunos .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+
+/* active or hovered links */
+
+.navbar-gatunos .nav-item.active .nav-link,
+.navbar-gatunos .nav-item:hover .nav-link {
+    color: rgb(245, 145, 0);
+    font-family: 'PortoSans-Bold';
+}
+
+
+/* toggler */
+
+.gatunos-toggler.navbar-toggler {
+    border-color: transparent;
+}
+
+.gatunos-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik0zIDE4aDE4di0ySDN2MnptMC01aDE4di0ySDN2MnptMC03djJoMThWNkgzeiIvPgo8L3N2Zz4=");
+    font-size: 24px;
+}
+
+.gatunos-toggler:focus {
+    outline: none !important;
+}

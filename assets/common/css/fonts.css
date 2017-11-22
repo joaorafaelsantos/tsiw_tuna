@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PortoSans-Regular';
+    src: url('../../common/fonts/PortoSans-Regular.otf');
+}
+
+@font-face {
+    font-family: 'PortoSans-Bold';
+    src: url('../../common/fonts/PortoSans-Bold.otf');
+}
