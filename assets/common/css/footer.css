@@ -13,20 +13,20 @@
 }
 
 .iconFacebook img {
-    content: url("../../common/images/facebook_white_icon.png");
+    content: url("../../common/images/navbar/facebook_white_icon.png");
 }
 
 .iconInstagram img {
-    content: url("../../common/images/instagram_white_icon.png");
+    content: url("../../common/images/navbar/instagram_white_icon.png");
 }
 
 .iconFacebook img:hover {
-    content: url("../../common/images/facebook_original_icon.png");
+    content: url("../../common/images/navbar/facebook_original_icon.png");
     text-decoration: none !important;
 }
 
 .iconInstagram img:hover {
-    content: url("../../common/images/instagram_original_icon.png");
+    content: url("../../common/images/navbar/instagram_original_icon.png");
     text-decoration: none !important;
 }
 
