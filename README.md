@@ -9,11 +9,12 @@ Não o queria chamar regras, são mais um conjunto de boas práticas para quando
 ```
 Exemplo: espetaculo_gatunos.html
 ```
-**2. As páginas de html devem ser guardadas na pasta** `/pages`
+**2. As páginas de html devem ser guardadas na pasta** `/pages` (ainda por criar)
 ```
 Exemplo: /pages/espetaculo_gatunos.html
 ```
 **3. As imagens têm o seguinte path:** `/assets/common/images/nomeSeparador/nomeImagem.png`
 ```
-Exemplo: /images/espetaculo/gatunos_bg.png
+Exemplo: assets/common/images/espetaculo/gatunos_bg.png
 ```
+**4. Não adicionar navbar nem footer às páginas**
