@@ -1,0 +1,27 @@
+.btn-gatunos {
+    background-color: rgb(171, 20, 29);
+    color: rgb(255, 255, 255);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 90%;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    font-family: 'PortoSans-Bold';
+}
+
+.btn-gatunos:hover {
+    background-color: rgba(171, 20, 29, 0.8);
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    .btn-gatunos {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        color: rgb(171, 20, 29);
+        font-size: 130%;
+    }
+}

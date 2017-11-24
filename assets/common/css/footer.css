@@ -33,3 +33,9 @@
 .socialMedia {
     float: right;
 }
+
+.hashtag {
+    font-family: 'PortoSans-Bold';
+    font-size: 130%;    
+    color: rgb(171, 20, 29);
+}
