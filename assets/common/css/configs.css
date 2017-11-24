@@ -2,13 +2,21 @@ body {
     padding-top: 5rem;
     font-family: 'PortoSans-Regular';
     color: rgb(255, 255, 255);
-    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../../common/images/pic1.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../../common/images/others/pic1.jpg");
 }
 
 .starter-template {
     padding: 3rem 1.5rem;
     text-align: center;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }

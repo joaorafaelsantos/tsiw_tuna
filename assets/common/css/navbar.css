@@ -2,6 +2,8 @@
 
 .navbar-gatunos {
     background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'PortoSans-Bold';
+    font-size: 115%;
 }
 
 
@@ -10,7 +12,7 @@
 .navbar-gatunos .navbar-brand,
 .navbar-gatunos .navbar-text {
     color: rgb(255, 255, 255);
-    background: url("../../common/images/logo-white.png");
+    background: url("../../common/images/navbar/logo-white.png");
 }
 
 
@@ -32,8 +34,7 @@
 
 .navbar-gatunos .nav-item.active .nav-link,
 .navbar-gatunos .nav-item:hover .nav-link {
-    color: rgb(245, 145, 0);
-    font-family: 'PortoSans-Bold';
+    color: rgb(171, 20, 29);
 }
 
 
@@ -50,4 +51,36 @@
 
 .gatunos-toggler:focus {
     outline: none !important;
+}
+
+
+/* dropdown menu */
+
+.dropdown-menu,
+.dropdown-item {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'PortoSans-Regular';
+}
+
+.dropdown-item:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(171, 20, 29);
+}
+
+@media (max-width:767px) {
+    .nav-item {
+        text-align: center;
+    }
+    .dropdown-menu,
+    .dropdown-item {
+        background-color: rgba(28, 28, 28, 0.2);
+        text-align: center;
+    }
+}
+
+@media (min-width: 979px) {
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
 }
