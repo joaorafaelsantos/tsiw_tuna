@@ -11,16 +11,45 @@ body {
     /* visibility: hidden; */
 }
 
-
 html {
     position: relative;
     min-height: 100%;
-  }
-  body {
+}
+
+body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-  }
+}
 
-  p {
-      font-size: 140%;
-  }
+p {
+    font-size: 140%;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+}
+
+@media (max-width:1024px) {
+    .google-maps {
+        padding-bottom: 55%;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+.anchor {
+    color: rgb(171, 20, 29);
+}
+
+.anchor:hover {
+    color: rgba(171, 20, 29, 0.7);
+    text-decoration: none;
+}
