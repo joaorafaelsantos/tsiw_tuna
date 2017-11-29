@@ -11,8 +11,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>XXI Sarau de Natal</title>
     <link rel="shortcut icon" href="assets/common/images/navbar/logo-favicon.ico" type="image/x-icon">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/libs/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <!-- CSS -->
@@ -20,13 +18,14 @@
     <link rel="stylesheet" href="assets/common/css/configs.css">
     <link rel="stylesheet" href="assets/common/css/navbar.css">
     <link rel="stylesheet" href="assets/common/css/buttons.css">
+    <link rel="stylesheet" href="assets/common/css/modal.css">
     <link rel="stylesheet" href="assets/common/css/footer.css">
 </head>
 
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-gatunos fixed-top" id="nav-placeholder">
-        <a class="navbar-brand" href="pages/home.html">
+        <a id="home" class="navbar-brand" href="pages/home.html">
             <img src="assets/common/images/navbar/logo-white.png" width="50" height="50" alt="">
         </a>
         <!-- Toggle -->
@@ -40,69 +39,97 @@
             <ul class="navbar-nav mx-auto">
                 <!-- Espetáculo -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#espetaculo" data-toggle="dropdown">ESPETÁCULO</a>
+                    <a id="espetaculo" class="nav-link dropdown-toggle" data-toggle="dropdown">ESPETÁCULO</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="pages/espetaculo_gatunos.html">Gatunos</a>
-                        <a class="dropdown-item" href="pages/espetaculo_afrodituna.html">Afrodituna</a>
-                        <a class="dropdown-item" href="pages/espetaculo_escolas.html">Escola de Rock/Escola de Música da Vila</a>
-                        <!-- <a class="dropdown-item" href="espetaculo_apresentador.html">Apresentador</a> -->
+                        <a id="espetaculo-gatunos" class="dropdown-item" href="pages/espetaculo_gatunos.html">Gatunos</a>
+                        <a id="espetaculo-afrodituna" class="dropdown-item" href="pages/espetaculo_afrodituna.html">Afrodituna</a>
+                        <a id="espetaculo-escolas" class="dropdown-item" href="pages/espetaculo_escolas.html">Escola de Rock/Escola de Música da Vila</a>
                     </div>
                 </li>
                 <!-- Causas Solidárias -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#causas_solidarias" data-toggle="dropdown">CAUSAS SOLIDÁRIAS</a>
+                    <a id="causas-solidarias" class="nav-link dropdown-toggle" data-toggle="dropdown">CAUSAS SOLIDÁRIAS</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="pages/csolidarias_ipp.html">IPP Solidário</a>
-                        <a class="dropdown-item" href="pages/csolidarias_mariadapaz.html">Maria da Paz Varzim</a>
+                        <a id="csolidarias_ipp" class="dropdown-item" href="pages/csolidarias_ipp.html">IPP Solidário</a>
+                        <a id="csolidarias_mariadapaz" class="dropdown-item" href="pages/csolidarias_mariadapaz.html">Maria da Paz Varzim</a>
                     </div>
                 </li>
                 <!-- Colaboradores -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#colaboradores" data-toggle="dropdown">COLABORADORES</a>
+                    <a id="colaboradores" class="nav-link dropdown-toggle" data-toggle="dropdown">COLABORADORES</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="pages/colab_esht.html">ESHT</a>
-                        <a class="dropdown-item" href="pages/colab_esmad.html">ESMAD</a>
+                        <a id="colab_esht" class="dropdown-item" href="pages/colab_esht.html">ESHT</a>
+                        <a id="colab_esmad" class="dropdown-item" href="pages/colab_esmad.html">ESMAD</a>
                     </div>
-                </li>
-                <!-- Festa -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#festa">FESTA</a>
                 </li>
                 <!-- Reservas -->
                 <li class="nav-item">
                     <a class="nav-link" href="#contactos">CONTACTOS</a>
                 </li>
             </ul>
-            <button class="btn-gatunos" href="#reservas" type="button">COMPRAR BILHETE</button>
+            <button id="btnComprarBilhete" class="btn-gatunos" data-toggle="modal" data-target="#myModal" type="button">COMPRAR BILHETE</button>
         </div>
     </nav>
 
     <!-- PAGE CONTENT -->
     <main role="main" class="container">
-        <!-- <div class="starter-template">
-            <div class="jumbotron">
-                <h1 id="welcomeText" class="display-3"></h1>
+        <div id="content">
+        </div>
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Informações</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>gatunos@ipp.pt</p>
+                        <p>Pedro Inácio (916 517 684)</p>
+                        <p>Júlio Aguiar (925 024 503) </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-gatunos" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
             </div>
-        </div> -->
+        </div>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <!-- Parcerias-->
-            <span>
-                <a href="https://www.facebook.com/AE-ESHT-298491427188463/"><img class="parceria" src="assets/common/images/parcerias/AE_ESHT.png" alt="AE ESHT"></a>
-                <a href="https://www.esht.ipp.pt"><img class="parceria" src="assets/common/images/parcerias/ESHT-01.png" alt="ESHT"></a>
-                <a href="https://www.esmad.ipp.pt"><img class="parceria" src="assets/common/images/parcerias/ESMAD-01.png" alt="ESMAD"></a>
-                <a href="http://minerva-online.pt/"><img class="parceria" src="assets/common/images/parcerias/MINERVA_ONLINE-01.png" alt="MINERVA ONLINE"></a>
-                <a href="https://www.facebook.com/N%C3%BAcleo-de-Estudantes-de-Design-ESMAD-1134809076601774/"><img class="parceria" src="assets/common/images/parcerias/NED_ESMAD-01.png" alt="NED ESMAD"></a>
-                <a href="https://www.ipp.pt"><img class="parceria" src="assets/common/images/parcerias/P_PORTO-01.png" alt="P PORTO"></a>
+            <!-- Credits-->
+            <span class="partnerships">
+                <a href="https://www.facebook.com/AE-ESHT-298491427188463/" target="_blank">
+                    <img class="parceria" src="assets/common/images/parcerias/AE_ESHT.png" alt="AE ESHT">
+                </a>
+                <a href="https://www.esht.ipp.pt" target="_blank">
+                    <img class="parceria" src="assets/common/images/parcerias/ESHT-01.png" alt="ESHT">
+                </a>
+                <a href="https://www.esmad.ipp.pt" target="_blank">
+                    <img class="parceria" src="assets/common/images/parcerias/ESMAD-01.png" alt="ESMAD">
+                </a>
+                <a href="http://minerva-online.pt/" target="_blank">
+                    <img class="parceria" src="assets/common/images/parcerias/MINERVA_ONLINE-01.png" alt="MINERVA ONLINE">
+                </a>
+                <a href="https://www.facebook.com/N%C3%BAcleo-de-Estudantes-de-Design-ESMAD-1134809076601774/" target="_blank">
+                    <img class="parceria" src="assets/common/images/parcerias/NED_ESMAD-01.png" alt="NED ESMAD">
+                </a>
+                <a href="https://www.ipp.pt" target="_blank">
+                    <img class="parceria" src="assets/common/images/parcerias/P_PORTO-01.png" alt="P PORTO">
+                </a>
             </span>
             <!-- Social Media Icons-->
             <span class="socialMedia pull-xs-right">
                 <a href="https://www.facebook.com/TunaGatunos" target="_blank" class="iconFacebook">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>                
+                    <img src="" alt="">
+                </a>
+                <a href="https://www.instagram.com/tunagatunos/" target="_blank" class="iconInstagram">
+                    <img src="" alt="">
+                </a>
             </span>
         </div>
     </footer>
@@ -115,6 +142,7 @@
     <script src="assets/libs/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <!-- Our Scripts -->
     <script src="assets/common/js/configs.js"></script>
+    <script src="assets/common/js/routes.js"></script>
 </body>
 
 </html>

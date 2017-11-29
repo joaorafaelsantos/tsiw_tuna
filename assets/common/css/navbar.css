@@ -74,7 +74,7 @@
     color: rgb(255, 255, 255);
 }
 
-@media (max-width:767px) {
+@media (max-width:1024px) {
     .nav-item {
         text-align: center;
     }
@@ -85,7 +85,7 @@
     }
 }
 
-@media (min-width: 979px) {
+@media (min-width: 1025px) {
     .dropdown:hover>.dropdown-menu {
         display: block;
     }
@@ -95,4 +95,8 @@
 #causas-solidarias:hover,
 #colaboradores:hover {
     cursor: pointer;
+}
+
+#navbarMenu {
+    background-color: rgba(0, 0, 0, 0.5);
 }

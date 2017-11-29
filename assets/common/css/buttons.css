@@ -16,7 +16,11 @@
     cursor: pointer;
 }
 
-@media (max-width:767px) {
+.btn-gatunos:focus {
+    outline: none;
+}
+
+@media (max-width:1024px) {
     .btn-gatunos {
         width: 100%;
         border: none;
