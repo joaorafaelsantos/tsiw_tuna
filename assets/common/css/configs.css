@@ -22,7 +22,7 @@ body {
 }
 
 p {
-    font-size: 140%;
+    font-size: 115%;
 }
 
 .google-maps {
@@ -52,4 +52,8 @@ p {
 .anchor:hover {
     color: rgba(171, 20, 29, 0.7);
     text-decoration: none;
+}
+
+#content {
+    padding-bottom: 50px;
 }
