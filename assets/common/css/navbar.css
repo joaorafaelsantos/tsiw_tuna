@@ -63,9 +63,15 @@
     font-family: 'PortoSans-Regular';
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover,
+.dropdown-item:active {
     background-color: rgb(0, 0, 0);
     color: rgb(171, 20, 29);
+}
+
+.dropdown-item:focus {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 @media (max-width:767px) {
@@ -83,4 +89,10 @@
     .dropdown:hover>.dropdown-menu {
         display: block;
     }
+}
+
+#espetaculo:hover,
+#causas-solidarias:hover,
+#colaboradores:hover {
+    cursor: pointer;
 }
