@@ -72,4 +72,10 @@ $(function () {
     });
 
     // CONTACTOS
+    $("#contactos").click(function (e) {
+        e.preventDefault();
+        $("#content").empty();
+        $("#content").load("../../../pages/contactos.html");
+        closeMenu();
+    });
 })
