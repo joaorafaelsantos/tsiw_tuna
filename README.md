@@ -4,10 +4,14 @@
   <h3 align="center"><b>Sarau de Natal 2017 - Gatunos ESMAD</b></h3>
 
   <p align="center">
-    This is a project made by students of [School of Media Arts and Design (P.PORTO)](https://www.esmad.ipp.pt/), [Web Information Systems and Technologies](https://www.esmad.ipp.pt/cursos/licenciatura/400001419) graduation. It's developed for the event "Sarau de Natal 2017" by [Gatunos - Tuna Académica do Politécnico do Porto](https://www.facebook.com/TunaGatunos/).
+    This is a project made by students of <a href="https://www.esmad.ipp.pt/">School of Media Arts and Design (P.PORTO)</a>, <a href="https://www.esmad.ipp.pt/cursos/licenciatura/400001419">Web Information Systems and Technologies</a> graduation. It's developed for the event "Sarau de Natal 2017" by <a href="https://www.facebook.com/TunaGatunos/>"> Gatunos - Tuna Académica do Politécnico do Porto</a>.
     <br>
     <br>
-    You can find our project [here](http://gatunos.pt/saraudenatal/).
+    You can find our project [<a href="http://gatunos.pt/saraudenatal/">here</a>].
   </p>
 </p>
+
+
+
+
 
